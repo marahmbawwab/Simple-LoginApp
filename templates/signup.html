@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up Page</title>
+</head> 
+<body>
+    <h1>Sign Up</h1>
+    {% for message in messages %}
+     {{message}}
+    {% endfor %}
+    <form method="post" action ="signup">
+        {% csrf_token %}
+     <p>UserName :</p>   
+     <input type ="text" name = "user"/>
+     <p>Email :</p>
+     <input type = "email" name = "email"/>
+     <p>Password :</p>
+     <input type="password" name ="pass"/> <br><br>
+     <input type="submit" name ="register" value = "signup"/>
+    </form>
+</body>   
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome Page</title>
+    <script>
+       function gotologin()
+       {
+        document.location.href = "{% url 'login' %}"
+       }
+
+       function gotosignup()
+       {
+        document.location.href = "{% url 'signup' %}"
+       }
+       function logout()
+       {
+        document.location.href = "{% url 'logout' %}"
+       }
+    </script>
+  </head>  
+  <body style="text-align: center;">
+    {% if user.is_authenticated %}
+      <h1> Welcome {{user.username}}  To Our Website!</h1>
+      <input type="submit" value ="LogOut" style="width: 80px; height: 50px; margin: 20px;" onclick="logout()"/>
+    {% else %}  
+    <p style="color: black; font-size: 40px;">Welcome To Our Website !!</p>
+    <input type ="submit" value="LogIn" name = "login" style="width: 50px; height: 50px; margin: 20px;" onclick="
+    gotologin()"/>
+    <input type ="submit" value="signup" name = "signup" style="width: 50px; height: 50px;" onclick="gotosignup()"/>
+    {% endif %}
+  </body>
+</html>
