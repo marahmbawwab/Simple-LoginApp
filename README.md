@@ -1,2 +1,2 @@
 # Simple-LoginSystem
-Welcome to My Login Website! This is a simple login project made in Python and Django for backend and CSS,HTML,JS for frontend. The idea behind the project is to learn how to implement the user authentication method (Login, Signup,Logout). 
+Welcome to My Login Website! This is a simple login project made in Python and Django for backend and CSS,HTML,JS for frontend. The idea behind the project is to learn how to implement the user authentication methods (Login, Signup,Logout). Which I can later apply in each online app with some changes on it because every website nowadays requires users to create accounts, and therefore this will come in handy.
